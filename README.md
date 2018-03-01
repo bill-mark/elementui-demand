@@ -33,7 +33,7 @@ vue 2.X和elementui 2.X搭配使用时,按需引入.
 
 如果elementui版本是1.X,则styleLibraryName的值要修改为theme-default
 
-#第三步
+# 第三步
 在main.js中按需引入组件
 比如要按需引入button,则为
 import Vue from 'vue'
@@ -54,3 +54,8 @@ new Vue({
   components: { App },
   template: '<App/>'
 })
+
+
+# 报错
+如果报错Module build failed: Error: Couldn't find preset "es2015" relative to directory 
+则执行npm install babel-preset-es2015 --save-dev
